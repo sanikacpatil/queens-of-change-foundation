@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queens Of Change Foundation</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        /* Navbar */
+
+        nav{
+            background:#6a0dad;
+            padding:15px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav h2{
+            color:white;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        /* Hero Section */
+
+        .hero{
+            background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop');
+
+            background-size:cover;
+            background-position:center;
+            height:90vh;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .hero-content h1{
+            font-size:50px;
+            margin-bottom:15px;
+        }
+
+        .hero-content p{
+            font-size:20px;
+            margin-bottom:20px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#ff6b6b;
+            color:white;
+            padding:12px 30px;
+            text-decoration:none;
+            border-radius:30px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#ff3b3b;
+            transform:scale(1.05);
+        }
+
+        /* About Section */
+
+        .about{
+            padding:60px 10%;
+            text-align:center;
+            background:white;
+        }
+
+        .about h2{
+            color:#6a0dad;
+            margin-bottom:20px;
+            font-size:35px;
+        }
+
+        .about p{
+            max-width:800px;
+            margin:auto;
+            line-height:1.8;
+        }
+
+        /* Cards */
+
+        .mission{
+            padding:60px 10%;
+        }
+
+        .mission h2{
+            text-align:center;
+            color:#6a0dad;
+            margin-bottom:40px;
+            font-size:35px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card h3{
+            color:#6a0dad;
+            margin-bottom:15px;
+        }
+
+        /* Footer */
+
+        footer{
+            background:#240046;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        /* Responsive */
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+                gap:10px;
+            }
+
+            .hero-content h1{
+                font-size:35px;
+            }
+
+            .hero-content p{
+                font-size:18px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+        <h2>Queens Of Change</h2>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Queens Of Change Foundation</h1>
+
+            <p>
+               Together We Rise for a Better Tomorrow
+            </p>
+
+            <a href="#" class="btn">Join Us</a>
+
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about" class="about">
+
+        <h2>About Us</h2>
+
+ <p>
+    Queens Of Change Foundation is a non-profit organization
+    working towards women empowerment, education,
+    community support, and social awareness.
+
+    Our goal is to create opportunities for women
+    through education, support, and community programs.
+
+    We believe every woman deserves opportunities,
+    confidence, and a brighter future.
+</p>
+
+    </section>
+
+    <!-- Mission Cards -->
+
+    <section id="mission" class="mission">
+
+        <h2>Our Mission</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Education</h3>
+
+                <p>
+                    Helping young girls and women get better
+                    education opportunities.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Healthcare</h3>
+
+                <p>
+                    Creating awareness about health,
+                    hygiene, and wellness.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Women Empowerment</h3>
+
+                <p>
+                    Supporting women with skills,
+                    confidence, and independence.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+    <footer id="contact">
+
+        <p>
+            © 2026 Queens Of Change Foundation |
+            Created by Sanika Patil
+        </p>
+
+    </footer>
+
+</body>
+</html>
